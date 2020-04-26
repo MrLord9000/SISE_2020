@@ -13,28 +13,40 @@ namespace SISE_2020
         /// <summary>
         /// Command to make this state (LRUD)
         /// </summary>
-        private string command;
+        public string command;
 
         private int recursionDepth;
 
-        private (int, int) zeroPosition;
+        private Tuple<int, int> zeroPosition;
 
-        public PuzzleMatrix(int[,] values, string command = "")
+        public PuzzleMatrix(int[,] values, Tuple<int, int> zeroPosition, string command = "")
         {
             matrix = new int[values.GetLength(0), values.GetLength(1)];
-            matrix = values;
+            matrix = CopyMatrix(values);
             if(command != "")
             {
                 this.command = command;
             }
             recursionDepth = 0;
-            for(int i = 0; i < matrix.GetLength(0); ++i)
+            this.zeroPosition = new Tuple<int, int>(zeroPosition.Item1, zeroPosition.Item2);
+        }
+
+        public PuzzleMatrix(int[,] values, string command = "")
+        {
+            matrix = new int[values.GetLength(0), values.GetLength(1)];
+            matrix = CopyMatrix(values);
+            if (command != "")
             {
-                for(int j = 0; j < matrix.GetLength(1); ++j)
+                this.command = command;
+            }
+            recursionDepth = 0;
+            for (int i = 0; i < matrix.GetLength(0); ++i)
+            {
+                for (int j = 0; j < matrix.GetLength(1); ++j)
                 {
-                    if(matrix[i,j] == 0)
+                    if (matrix[i, j] == 0)
                     {
-                        zeroPosition = (i, j);
+                        zeroPosition = new Tuple<int, int>(i, j);
                         return;
                     }
 
@@ -57,7 +69,7 @@ namespace SISE_2020
                     matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = tempValue;
                     if (tempValue == 0)
                     {
-                        zeroPosition = (i / matrix.GetLength(0), i % matrix.GetLength(1));
+                        zeroPosition = new Tuple<int, int>(i / matrix.GetLength(0), i % matrix.GetLength(1));
                     }
                 }
             }
@@ -65,6 +77,14 @@ namespace SISE_2020
             {
                 throw new ArgumentException($"Generated puzzle matrix has size {values.Length} while provided values had size {matrix.Length}. Aborting.");
             }
+        }
+
+        public PuzzleMatrix(PuzzleMatrix puzzle)
+        {
+            command = puzzle.command;
+            recursionDepth = puzzle.recursionDepth;
+            matrix = CopyMatrix(puzzle.matrix);
+            zeroPosition = new Tuple<int, int>(puzzle.zeroPosition.Item1, puzzle.zeroPosition.Item2);
         }
 
         public override string ToString()
@@ -87,10 +107,12 @@ namespace SISE_2020
 
         public PuzzleMatrix MoveFreeSpace(char command)
         {
-            int[,] newMatrix = matrix;
+            int[,] newMatrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
+            newMatrix = CopyMatrix(matrix);
             int swapTemp;
             string newCommand = this.command;
-            switch(command)
+            Tuple<int, int> newZero = new Tuple<int, int>(-1, -1);
+            switch (command)
             {
                 case 'U':
                 case 'u':
@@ -99,6 +121,7 @@ namespace SISE_2020
                         swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1 - 1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1 - 1, zeroPosition.Item2] = swapTemp;
+                        newZero = new Tuple<int, int>(zeroPosition.Item1 - 1, zeroPosition.Item2);
                         newCommand += "U";
                     }
                     else
@@ -113,6 +136,7 @@ namespace SISE_2020
                         swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1, zeroPosition.Item2 - 1];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2 - 1] = swapTemp;
+                        newZero = new Tuple<int, int>(zeroPosition.Item1, zeroPosition.Item2 - 1);
                         newCommand += "L";
                     }
                     else
@@ -122,11 +146,12 @@ namespace SISE_2020
                     break;
                 case 'R':
                 case 'r':
-                    if (zeroPosition.Item2 < newMatrix.GetLength(1))
+                    if (zeroPosition.Item2 < newMatrix.GetLength(1) - 1)
                     {
                         swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1, zeroPosition.Item2 + 1];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2 + 1] = swapTemp;
+                        newZero = new Tuple<int, int>(zeroPosition.Item1, zeroPosition.Item2 + 1);
                         newCommand += "R";
                     }
                     else
@@ -136,11 +161,12 @@ namespace SISE_2020
                     break;
                 case 'D':
                 case 'd':
-                    if (zeroPosition.Item1 < newMatrix.GetLength(0))
+                    if (zeroPosition.Item1 < newMatrix.GetLength(0) - 1)
                     {
                         swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1 + 1, zeroPosition.Item2];
                         newMatrix[zeroPosition.Item1 + 1, zeroPosition.Item2] = swapTemp;
+                        newZero = new Tuple<int, int>(zeroPosition.Item1 + 1, zeroPosition.Item2);
                         newCommand += "D";
                     }
                     else
@@ -149,7 +175,7 @@ namespace SISE_2020
                     }
                     break;
             }
-            return new PuzzleMatrix(newMatrix, newCommand);
+            return new PuzzleMatrix(newMatrix, newZero, newCommand);
         }
 
         public bool Validate()
@@ -173,6 +199,17 @@ namespace SISE_2020
 
         public static bool operator ==(PuzzleMatrix left, PuzzleMatrix right)
         {
+
+            if (object.ReferenceEquals(left, null) && object.ReferenceEquals(right, null) )
+            {
+                return true;
+            }
+
+            if (object.ReferenceEquals(left, null) || object.ReferenceEquals(right, null))
+            {
+                return false;
+            }
+
             int rowsL = left.matrix.GetLength(0), columnsL = left.matrix.GetLength(1);
             int rowsR = right.matrix.GetLength(0), columnsR = right.matrix.GetLength(1);
             // Check for equal dimensions
@@ -192,21 +229,21 @@ namespace SISE_2020
 
         public static bool operator !=(PuzzleMatrix left, PuzzleMatrix right)
         {
-            int rowsL = left.matrix.GetLength(0), columnsL = left.matrix.GetLength(1);
-            int rowsR = right.matrix.GetLength(0), columnsR = right.matrix.GetLength(1);
-            // Check for equal dimensions
-            if (rowsL != rowsR || columnsL != columnsR)
+            return !(left == right);
+        }
+
+        private int[,] CopyMatrix(int[,] from)
+        {
+            int[,] newMatrix = new int[from.GetLength(0), from.GetLength(1)];
+            for (int i = 0; i < from.GetLength(0); ++i)
             {
-                return true;
-            }
-            for (int i = 0; i < left.matrix.Length; i++)
-            {
-                if (left.matrix[i / rowsL, i % columnsL] != right.matrix[i / rowsR, i % columnsR])
+                for (int j = 0; j < from.GetLength(1); ++j)
                 {
-                    return true;
+                    newMatrix[i, j] = from[i, j];
                 }
             }
-            return false;
+
+            return newMatrix;
         }
     }
 }
