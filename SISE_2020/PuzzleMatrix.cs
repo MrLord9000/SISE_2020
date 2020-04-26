@@ -27,7 +27,7 @@ namespace SISE_2020
             {
                 for (int i = 0; i < values.Length; i++)
                 {
-                    matrix[i / 4, i % 4] = values[i];
+                    matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = values[i];
                 }
             }
             else
@@ -47,7 +47,7 @@ namespace SISE_2020
             {
                 for (int i = 0; i < values.Length - 2; i++)
                 {
-                    matrix[i / 4, i % 4] = int.Parse(values[i + 2]);
+                    matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = int.Parse(values[i + 2]);
                 }
             }
             else
@@ -58,7 +58,7 @@ namespace SISE_2020
 
         public override string ToString()
         {
-            StringBuilder output = new StringBuilder($"Puzzle Matrix. Size: {matrix.GetUpperBound(0) + 1}x{matrix.GetUpperBound(1) + 1}\n");
+            StringBuilder output = new StringBuilder($"Puzzle Matrix. Size: {matrix.GetLength(0)}x{matrix.GetLength(1)}\n");
             for (int i = 0; i < matrix.Length; i++)
             {
                 output.Append(matrix[i / 4, i % 4].ToString());
@@ -85,6 +85,25 @@ namespace SISE_2020
                     break;
             }
             return false;
+        }
+
+        public bool Validate()
+        {
+            bool validity = false;
+
+            for (int i = 0; i < matrix.Length - 1; i++)
+            {
+                if (matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] == i + 1)
+                {
+                    validity = true;
+                }
+                else
+                {
+                    validity = false;
+                    break;
+                }
+            }
+            return validity;
         }
     }
 }
