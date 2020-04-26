@@ -39,6 +39,7 @@ namespace SISE_2020
 
             PuzzleMatrix testMatrix = new PuzzleMatrix(inputValues);
             Console.WriteLine(testMatrix.ToString());
+            Console.WriteLine(testMatrix.Validate());
         }
     }
 }
