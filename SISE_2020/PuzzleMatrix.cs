@@ -17,22 +17,28 @@ namespace SISE_2020
 
         private int recursionDepth;
 
+        private (int, int) zeroPosition;
 
-        public PuzzleMatrix(int rows, int columns, int[] values)
+        public PuzzleMatrix(int[,] values, string command = "")
         {
-            matrix = new int[rows, columns];
-            command = "";
-            recursionDepth = 0;
-            if (values.Length == matrix.Length)
+            matrix = new int[values.GetLength(0), values.GetLength(1)];
+            matrix = values;
+            if(command != "")
             {
-                for (int i = 0; i < values.Length; i++)
-                {
-                    matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = values[i];
-                }
+                this.command = command;
             }
-            else
+            recursionDepth = 0;
+            for(int i = 0; i < matrix.GetLength(0); ++i)
             {
-                throw new ArgumentException($"Generated puzzle matrix has size {values.Length} while provided values had size {matrix.Length}. Aborting.");
+                for(int j = 0; j < matrix.GetLength(1); ++j)
+                {
+                    if(matrix[i,j] == 0)
+                    {
+                        zeroPosition = (i, j);
+                        return;
+                    }
+
+                }
             }
         }
 
@@ -47,7 +53,12 @@ namespace SISE_2020
             {
                 for (int i = 0; i < values.Length - 2; i++)
                 {
-                    matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = int.Parse(values[i + 2]);
+                    var tempValue = int.Parse(values[i + 2]);
+                    matrix[i / matrix.GetLength(0), i % matrix.GetLength(1)] = tempValue;
+                    if (tempValue == 0)
+                    {
+                        zeroPosition = (i / matrix.GetLength(0), i % matrix.GetLength(1));
+                    }
                 }
             }
             else
@@ -74,17 +85,71 @@ namespace SISE_2020
             return output.ToString();
         }
 
-        public bool moveFreeSpace(char command)
+        public PuzzleMatrix MoveFreeSpace(char command)
         {
-            
+            int[,] newMatrix = matrix;
+            int swapTemp;
+            string newCommand = this.command;
             switch(command)
             {
                 case 'U':
                 case 'u':
-
+                    if(zeroPosition.Item1 > 0)
+                    {
+                        swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1 - 1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1 - 1, zeroPosition.Item2] = swapTemp;
+                        newCommand += "U";
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                    break;
+                case 'L':
+                case 'l':
+                    if (zeroPosition.Item2 > 0)
+                    {
+                        swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1, zeroPosition.Item2 - 1];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2 - 1] = swapTemp;
+                        newCommand += "L";
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                    break;
+                case 'R':
+                case 'r':
+                    if (zeroPosition.Item2 < newMatrix.GetLength(1))
+                    {
+                        swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1, zeroPosition.Item2 + 1];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2 + 1] = swapTemp;
+                        newCommand += "R";
+                    }
+                    else
+                    {
+                        return null;
+                    }
+                    break;
+                case 'D':
+                case 'd':
+                    if (zeroPosition.Item1 < newMatrix.GetLength(0))
+                    {
+                        swapTemp = newMatrix[zeroPosition.Item1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1, zeroPosition.Item2] = newMatrix[zeroPosition.Item1 + 1, zeroPosition.Item2];
+                        newMatrix[zeroPosition.Item1 + 1, zeroPosition.Item2] = swapTemp;
+                        newCommand += "D";
+                    }
+                    else
+                    {
+                        return null;
+                    }
                     break;
             }
-            return false;
+            return new PuzzleMatrix(newMatrix, newCommand);
         }
 
         public bool Validate()
