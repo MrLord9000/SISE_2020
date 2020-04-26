@@ -10,9 +10,19 @@ namespace SISE_2020
     {
         private int[,] matrix;
 
+        /// <summary>
+        /// Command to make this state (LRUD)
+        /// </summary>
+        private string command;
+
+        private int recursionDepth;
+
+
         public PuzzleMatrix(int x, int y, int[] values)
         {
             matrix = new int[y, x];
+            command = "";
+            recursionDepth = 0;
             if (values.Length == matrix.Length)
             {
                 for (int i = 0; i < values.Length; i++)
@@ -28,6 +38,8 @@ namespace SISE_2020
 
         public PuzzleMatrix(string[] values)
         {
+            command = "";
+            recursionDepth = 0;
             int rows = int.Parse(values[0]);
             int columns = int.Parse(values[1]);
             matrix = new int[rows, columns];

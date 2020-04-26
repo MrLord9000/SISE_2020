@@ -8,6 +8,8 @@ namespace SISE_2020
 {
     class PuzzleFifteen
     {
-
+        private List<PuzzleMatrix> allStates;
+        private PuzzleMatrix currentState;
+        private PuzzleMatrix newState;
     }
 }
