@@ -14,46 +14,62 @@ namespace SISE_2020
         private List<PuzzleMatrix> newStates = new List<PuzzleMatrix>();
         
 
-        public bool Astar(PuzzleMatrix beginMatrix, string heuristic)
+        public PuzzleReturn Astar(PuzzleMatrix beginMatrix, string heuristic)
         {
+            allStates.Clear();
+            currentStates.Clear();
+            newStates.Clear();
+            PuzzleReturn astarReturn = new PuzzleReturn();
+            astarReturn.createdStates = 1;
+            astarReturn.depth = 0;
+            astarReturn.parsedStates = 0;
 
+            currentStates.Add(beginMatrix);
 
-            return false;
-        }
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
 
-        private int Hamming(PuzzleMatrix state)
-        {
-            int value = 0;
-            for (int i = 0; i < state.matrix.Length; i++)
+            while (true)
             {
-                int currentNumber = state.matrix[i / state.matrix.GetLength(0), i % state.matrix.GetLength(1)];
-                if (currentNumber != i + 1 && currentNumber != 0)
+                if (currentStates.Count > 0)
                 {
-                    value++;
+                    foreach(var state in currentStates)
+                    {
+                        astarReturn.createdStates++;
+                        if (!allStates.Contains(state))
+                        {
+                            allStates.Add(state);
+                            if (state.Validate())
+                            {
+                                watch.Stop();
+                                astarReturn.time = watch.ElapsedMilliseconds / 1000.0;
+                                astarReturn.resolvedMatrix = new PuzzleMatrix(state);
+                                return astarReturn;
+                            }
+                            else
+                            {
+
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Unresolved");
+                    astarReturn.resolvedMatrix = null;
+                    break;
                 }
             }
-            return value;
+
+            watch.Stop();
+            astarReturn.time = watch.ElapsedMilliseconds / 1000.0;
+
+            return astarReturn;
         }
 
-        private int Manhattan(PuzzleMatrix state)
+        public PuzzleReturn BFS(PuzzleMatrix beginMatrix, string commandOrder)
         {
-            int value = 0;
-            for (int i = 0; i < state.matrix.GetLength(0); i++)
-            {
-                for (int j = 0; j < state.matrix.GetLength(1); j++)
-                {
-                    int targetRow = state.matrix[i, j] / state.matrix.GetLength(0);
-                    int targetColumn = state.matrix[i, j] % state.matrix.GetLength(1);
-                    value += Math.Abs(targetRow - i);
-                    value += Math.Abs(targetColumn - j);
-                }
-            }
-            return value;
-        }
-
-        public BFSReturn BFS(PuzzleMatrix beginMatrix, string commandOrder)
-        {
-            BFSReturn returnVariables = new BFSReturn();
+            PuzzleReturn returnVariables = new PuzzleReturn();
             returnVariables.createdStates = 1;
             returnVariables.parsedStates = 0;
             returnVariables.depth = 0;
@@ -71,7 +87,7 @@ namespace SISE_2020
                     foreach(var state in currentStates)
                     {
                         returnVariables.createdStates++;
-                        if(!findInAllStates(state)) // if that state was not before
+                        if(!allStates.Contains(state)) // if that state was not before
                         {
                             allStates.Add(state);
                             if(state.Validate()) //if is valid
@@ -110,21 +126,43 @@ namespace SISE_2020
                 returnVariables.depth++;
             }
         }
-        public bool findInAllStates(PuzzleMatrix current)
+
+        private int Hamming(PuzzleMatrix state)
         {
-            foreach(var state in allStates)
+            int value = 0;
+            for (int i = 0; i < state.matrix.Length; i++)
             {
-                if(state == current)
+                int currentNumber = state.matrix[i / state.matrix.GetLength(0), i % state.matrix.GetLength(1)];
+                if (currentNumber != i + 1 && currentNumber != 0)
                 {
-                    return true;
+                    value++;
                 }
             }
-            return false;
+            return value;
+        }
+
+        private int Manhattan(PuzzleMatrix state)
+        {
+            int value = 0;
+            for (int i = 0; i < state.matrix.GetLength(0); i++)
+            {
+                for (int j = 0; j < state.matrix.GetLength(1); j++)
+                {
+                    if (state.matrix[i, j] != 0)
+                    {
+                        int targetRow = state.matrix[i, j] / state.matrix.GetLength(0);
+                        int targetColumn = state.matrix[i, j] % state.matrix.GetLength(1);
+                        value += Math.Abs(targetRow - i);
+                        value += Math.Abs(targetColumn - j);
+                    }
+                }
+            }
+            return value;
         }
     }
 
 
-    struct BFSReturn
+    struct PuzzleReturn
     {
         public double time;
         public int createdStates;

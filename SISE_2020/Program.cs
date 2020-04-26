@@ -23,7 +23,7 @@ namespace SISE_2020
             string outputStatsPath = args[4];
 
             PuzzleFifteen pf = new PuzzleFifteen();
-            BFSReturn bfsReturn = new BFSReturn();
+            PuzzleReturn bfsReturn = new PuzzleReturn();
             switch (algorithm)
             {
                 case "bfs":
