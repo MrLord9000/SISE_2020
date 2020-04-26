@@ -8,7 +8,7 @@ namespace SISE_2020
 {
     class PuzzleMatrix
     {
-        private int[,] matrix;
+        public int[,] matrix;
 
         /// <summary>
         /// Command to make this state (LRUD)
