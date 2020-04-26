@@ -11,5 +11,7 @@ namespace SISE_2020
         private List<PuzzleMatrix> allStates;
         private PuzzleMatrix currentState;
         private PuzzleMatrix newState;
+        
+
     }
 }

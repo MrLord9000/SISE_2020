@@ -105,5 +105,43 @@ namespace SISE_2020
             }
             return validity;
         }
+
+        public static bool operator ==(PuzzleMatrix left, PuzzleMatrix right)
+        {
+            int rowsL = left.matrix.GetLength(0), columnsL = left.matrix.GetLength(1);
+            int rowsR = right.matrix.GetLength(0), columnsR = right.matrix.GetLength(1);
+            // Check for equal dimensions
+            if (rowsL != rowsR || columnsL != columnsR)
+            {
+                return false;
+            }
+            for (int i = 0; i < left.matrix.Length; i++)
+            {
+                if (left.matrix[i / rowsL, i % columnsL] != right.matrix[i / rowsR, i % columnsR])
+                {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        public static bool operator !=(PuzzleMatrix left, PuzzleMatrix right)
+        {
+            int rowsL = left.matrix.GetLength(0), columnsL = left.matrix.GetLength(1);
+            int rowsR = right.matrix.GetLength(0), columnsR = right.matrix.GetLength(1);
+            // Check for equal dimensions
+            if (rowsL != rowsR || columnsL != columnsR)
+            {
+                return true;
+            }
+            for (int i = 0; i < left.matrix.Length; i++)
+            {
+                if (left.matrix[i / rowsL, i % columnsL] != right.matrix[i / rowsR, i % columnsR])
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 }
