@@ -18,9 +18,9 @@ namespace SISE_2020
         private int recursionDepth;
 
 
-        public PuzzleMatrix(int x, int y, int[] values)
+        public PuzzleMatrix(int rows, int columns, int[] values)
         {
-            matrix = new int[y, x];
+            matrix = new int[rows, columns];
             command = "";
             recursionDepth = 0;
             if (values.Length == matrix.Length)
@@ -72,6 +72,19 @@ namespace SISE_2020
                 }
             }
             return output.ToString();
+        }
+
+        public bool moveFreeSpace(char command)
+        {
+            
+            switch(command)
+            {
+                case 'U':
+                case 'u':
+
+                    break;
+            }
+            return false;
         }
     }
 }
