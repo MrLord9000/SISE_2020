@@ -23,27 +23,27 @@ namespace SISE_2020
             string outputStatsPath = args[4];
 
             PuzzleFifteen pf = new PuzzleFifteen();
-            PuzzleReturn bfsReturn = new PuzzleReturn();
+            PuzzleReturn puzzleReturn = new PuzzleReturn();
             switch (algorithm)
             {
                 case "bfs":
-                    bfsReturn = pf.BFS(new PuzzleMatrix(inputValues), strategy);
+                    puzzleReturn = pf.BFS(new PuzzleMatrix(inputValues), strategy);
                     break;
 
                 case "dfs":
-
+                    puzzleReturn = pf.DFS(new PuzzleMatrix(inputValues), strategy, 5);
                     break;
 
                 case "astr":
 
                     break;
             }
-            Console.WriteLine("Time: " + bfsReturn.time.ToString());
-            Console.WriteLine("Created states: " + bfsReturn.createdStates.ToString());
-            Console.WriteLine("Parsed states: " + bfsReturn.parsedStates.ToString());
-            Console.WriteLine("Depth: " + bfsReturn.depth.ToString());
-            if (bfsReturn.resolvedMatrix != null)
-                Console.WriteLine("Return command: " + bfsReturn.resolvedMatrix.command);
+            Console.WriteLine("Time: " + puzzleReturn.time.ToString("f3") + "ms");
+            Console.WriteLine("Created states: " + puzzleReturn.createdStates.ToString());
+            Console.WriteLine("Parsed states: " + puzzleReturn.parsedStates.ToString());
+            Console.WriteLine("Depth: " + puzzleReturn.depth.ToString());
+            if (puzzleReturn.resolvedMatrix != null)
+                Console.WriteLine("Return command: " + puzzleReturn.resolvedMatrix.Command);
         }
     }
 }

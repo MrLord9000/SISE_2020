@@ -13,9 +13,9 @@ namespace SISE_2020
         /// <summary>
         /// Command to make this state (LRUD)
         /// </summary>
-        public string command;
+        public string Command { get; private set; }
 
-        private int recursionDepth;
+        public int recursionDepth;
 
         private Tuple<int, int> zeroPosition;
 
@@ -25,7 +25,7 @@ namespace SISE_2020
             matrix = CopyMatrix(values);
             if(command != "")
             {
-                this.command = command;
+                this.Command = command;
             }
             recursionDepth = 0;
             this.zeroPosition = new Tuple<int, int>(zeroPosition.Item1, zeroPosition.Item2);
@@ -37,7 +37,7 @@ namespace SISE_2020
             matrix = CopyMatrix(values);
             if (command != "")
             {
-                this.command = command;
+                this.Command = command;
             }
             recursionDepth = 0;
             for (int i = 0; i < matrix.GetLength(0); ++i)
@@ -56,7 +56,7 @@ namespace SISE_2020
 
         public PuzzleMatrix(string[] values)
         {
-            command = "";
+            Command = "";
             recursionDepth = 0;
             int rows = int.Parse(values[0]);
             int columns = int.Parse(values[1]);
@@ -81,7 +81,7 @@ namespace SISE_2020
 
         public PuzzleMatrix(PuzzleMatrix puzzle)
         {
-            command = puzzle.command;
+            Command = puzzle.Command;
             recursionDepth = puzzle.recursionDepth;
             matrix = CopyMatrix(puzzle.matrix);
             zeroPosition = new Tuple<int, int>(puzzle.zeroPosition.Item1, puzzle.zeroPosition.Item2);
@@ -110,7 +110,7 @@ namespace SISE_2020
             int[,] newMatrix = new int[matrix.GetLength(0), matrix.GetLength(1)];
             newMatrix = CopyMatrix(matrix);
             int swapTemp;
-            string newCommand = this.command;
+            string newCommand = this.Command;
             Tuple<int, int> newZero = new Tuple<int, int>(-1, -1);
             switch (command)
             {

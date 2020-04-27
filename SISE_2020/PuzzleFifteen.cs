@@ -12,7 +12,8 @@ namespace SISE_2020
         private List<PuzzleMatrix> allStates = new List<PuzzleMatrix>();
         private List<PuzzleMatrix> currentStates = new List<PuzzleMatrix>();
         private List<PuzzleMatrix> newStates = new List<PuzzleMatrix>();
-        
+
+        PuzzleReturn returnVariables;
 
         public PuzzleReturn Astar(PuzzleMatrix beginMatrix, string heuristic)
         {
@@ -69,7 +70,7 @@ namespace SISE_2020
 
         public PuzzleReturn BFS(PuzzleMatrix beginMatrix, string commandOrder)
         {
-            PuzzleReturn returnVariables = new PuzzleReturn();
+            returnVariables = new PuzzleReturn();
             returnVariables.createdStates = 1;
             returnVariables.parsedStates = 0;
             returnVariables.depth = 0;
@@ -86,14 +87,14 @@ namespace SISE_2020
                 {
                     foreach(var state in currentStates)
                     {
-                        returnVariables.createdStates++;
-                        if(!allStates.Contains(state)) // if that state was not before
+                        returnVariables.parsedStates++;
+                        if(!wasThatStateBefore(state)) // if that state was not before
                         {
                             allStates.Add(state);
                             if(state.Validate()) //if is valid
                             {
                                 watch.Stop();
-                                returnVariables.time = watch.ElapsedMilliseconds / 1000.0;
+                                returnVariables.time = watch.Elapsed.TotalMilliseconds;
                                 returnVariables.resolvedMatrix = new PuzzleMatrix(state);
                                 return returnVariables;
                             }
@@ -102,7 +103,6 @@ namespace SISE_2020
                                 for(int i = 0; i < commandOrder.Length; ++i)
                                 {
                                     returnVariables.createdStates++;
-
                                     PuzzleMatrix theMatrix = state.MoveFreeSpace(commandOrder[i]);
                                     if(theMatrix != null)
                                     {
@@ -117,7 +117,7 @@ namespace SISE_2020
                 {
                     Console.WriteLine("Unresolved");
                     watch.Stop();
-                    returnVariables.time = watch.ElapsedMilliseconds / 1000.0;
+                    returnVariables.time = watch.Elapsed.TotalMilliseconds;
                     returnVariables.resolvedMatrix = null;
                     return returnVariables;
                 }
@@ -125,6 +125,65 @@ namespace SISE_2020
                 newStates.Clear();
                 returnVariables.depth++;
             }
+        }
+
+        public PuzzleReturn DFS(PuzzleMatrix beginMatrix, string commandOrder, int maxDepth)
+        {
+            returnVariables = new PuzzleReturn();
+            returnVariables.createdStates = 1;
+            returnVariables.parsedStates = 0;
+            allStates.Clear();
+            beginMatrix.recursionDepth = 0;
+
+            Stopwatch watch = new Stopwatch();
+            watch.Start();
+
+            if(!DFSAlgorithm(beginMatrix, commandOrder, maxDepth))
+            {
+                Console.WriteLine("Unresolved");
+            }
+            watch.Stop();
+            returnVariables.time = watch.Elapsed.TotalMilliseconds;
+            return returnVariables;
+        }
+
+        private bool DFSAlgorithm(PuzzleMatrix currentMatrix, string commandOrder, int maxDepth)
+        {
+            bool returnFlag = false;
+            if (currentMatrix != null && currentMatrix.recursionDepth < maxDepth)
+            {
+                returnVariables.parsedStates++;
+                if (!wasThatStateBefore(currentMatrix)) // if that state was not before
+                {
+                    allStates.Add(currentMatrix);
+                    if (currentMatrix.Validate()) //if is valid
+                    {
+                        returnVariables.resolvedMatrix = new PuzzleMatrix(currentMatrix);
+                        returnVariables.depth = currentMatrix.recursionDepth;
+                        return true;
+                    }
+                    else
+                    {
+                        for (int i = 0; i < commandOrder.Length; ++i)
+                        {
+                            returnVariables.createdStates++;
+                            var theMatrix = currentMatrix.MoveFreeSpace(commandOrder[i]);
+                            if (theMatrix != null)
+                            {
+                                theMatrix.recursionDepth = currentMatrix.recursionDepth + 1;
+                                returnFlag |= DFSAlgorithm(theMatrix, commandOrder, maxDepth);
+                                if (returnFlag)
+                                {
+                                    return true;
+                                }
+                            }
+                        }
+                            
+                    }
+                }
+            }
+            returnVariables.depth = currentMatrix.recursionDepth;
+            return false;
         }
 
         private int Hamming(PuzzleMatrix state)
@@ -158,6 +217,19 @@ namespace SISE_2020
                 }
             }
             return value;
+        }
+
+
+        private bool wasThatStateBefore(PuzzleMatrix state)
+        {
+            foreach(var s in allStates)
+            {
+                if(s == state)
+                {
+                    return true;
+                }
+            }
+            return false;
         }
     }
 
