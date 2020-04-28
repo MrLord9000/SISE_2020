@@ -35,7 +35,10 @@ namespace SISE_2020
                     break;
 
                 case "astr":
-
+                    if (strategy == "hamm")
+                        puzzleReturn = PuzzleFifteen.Astar(new PuzzleMatrix(inputValues), PuzzleFifteen.Hamming);
+                    if (strategy == "manh")
+                        puzzleReturn = PuzzleFifteen.Astar(new PuzzleMatrix(inputValues), PuzzleFifteen.Manhattan);
                     break;
             }
             Console.WriteLine("Time: " + puzzleReturn.time.ToString("f3") + "ms");

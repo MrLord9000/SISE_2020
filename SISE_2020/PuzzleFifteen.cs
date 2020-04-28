@@ -15,50 +15,57 @@ namespace SISE_2020
 
         PuzzleReturn returnVariables;
 
-        public PuzzleReturn Astar(PuzzleMatrix beginMatrix, string heuristic)
+        public static PuzzleReturn Astar(PuzzleMatrix beginMatrix, Heuristic heuristic)
         {
-            allStates.Clear();
-            currentStates.Clear();
-            newStates.Clear();
             PuzzleReturn astarReturn = new PuzzleReturn();
             astarReturn.createdStates = 1;
             astarReturn.depth = 0;
             astarReturn.parsedStates = 0;
 
-            currentStates.Add(beginMatrix);
+            List<(PuzzleMatrix, int)> currentStates = new List<(PuzzleMatrix, int)>();
+            List<PuzzleMatrix> visitedStates = new List<PuzzleMatrix>();
+            int currentDepth = 0;
+
+            // Initialize the current states
+            currentStates.Add((beginMatrix, Fscore(currentDepth, beginMatrix, heuristic)));
+            int bestMatrix = 0;
+
+            char[] operationOrder = { 'L', 'R', 'U', 'D' };
 
             Stopwatch watch = new Stopwatch();
             watch.Start();
 
             while (true)
             {
-                if (currentStates.Count > 0)
+                for (int i = 0; i < currentStates.Count; i++)
                 {
-                    foreach(var state in currentStates)
+                    // Set current index based on lowest fscore
+                    if (currentStates[i].Item2 < currentStates[bestMatrix].Item2)
                     {
-                        astarReturn.createdStates++;
-                        if (!allStates.Contains(state))
+                        bestMatrix = i;
+                    }
+                    // Check if selected matrix is valid
+                    if (currentStates[bestMatrix].Item1.Validate())
+                    {
+                        watch.Stop();
+                        astarReturn.time = watch.Elapsed.TotalMilliseconds;
+                        astarReturn.depth = currentDepth;
+                        astarReturn.resolvedMatrix = new PuzzleMatrix(currentStates[bestMatrix].Item1);
+                        return astarReturn;
+                    }
+                    // If validation fails create new matrices and evaluate Fscores
+                    currentDepth++;
+                    foreach (var operation in operationOrder)
+                    {
+                        PuzzleMatrix newMat = currentStates[bestMatrix].Item1.MoveFreeSpace(operation);
+                        if (newMat != null && !WasThatStateBefore(newMat, visitedStates))
                         {
-                            allStates.Add(state);
-                            if (state.Validate())
-                            {
-                                watch.Stop();
-                                astarReturn.time = watch.ElapsedMilliseconds / 1000.0;
-                                astarReturn.resolvedMatrix = new PuzzleMatrix(state);
-                                return astarReturn;
-                            }
-                            else
-                            {
-
-                            }
+                            currentStates.Add((newMat, Fscore(newMat.Command.Length, newMat, heuristic)));
                         }
                     }
-                }
-                else
-                {
-                    Console.WriteLine("Unresolved");
-                    astarReturn.resolvedMatrix = null;
-                    break;
+
+                    visitedStates.Add(currentStates[bestMatrix].Item1);
+                    currentStates.RemoveAt(bestMatrix);
                 }
             }
 
@@ -66,6 +73,11 @@ namespace SISE_2020
             astarReturn.time = watch.ElapsedMilliseconds / 1000.0;
 
             return astarReturn;
+        }
+
+        private static int Fscore(int depth, PuzzleMatrix state, Heuristic heuristic)
+        {
+            return depth + heuristic(state);
         }
 
         public PuzzleReturn BFS(PuzzleMatrix beginMatrix, string commandOrder)
@@ -88,7 +100,7 @@ namespace SISE_2020
                     foreach(var state in currentStates)
                     {
                         returnVariables.parsedStates++;
-                        if(!wasThatStateBefore(state)) // if that state was not before
+                        if(!WasThatStateBefore(state)) // if that state was not before
                         {
                             allStates.Add(state);
                             if(state.Validate()) //if is valid
@@ -104,7 +116,7 @@ namespace SISE_2020
                                 {
                                     returnVariables.createdStates++;
                                     PuzzleMatrix theMatrix = state.MoveFreeSpace(commandOrder[i]);
-                                    if(theMatrix != null)
+                                    if(theMatrix != null )
                                     {
                                         newStates.Add( theMatrix );
                                     }
@@ -153,7 +165,7 @@ namespace SISE_2020
             if (currentMatrix != null && currentMatrix.recursionDepth < maxDepth)
             {
                 returnVariables.parsedStates++;
-                if (!wasThatStateBefore(currentMatrix)) // if that state was not before
+                if (!WasThatStateBefore(currentMatrix)) // if that state was not before
                 {
                     allStates.Add(currentMatrix);
                     if (currentMatrix.Validate()) //if is valid
@@ -186,7 +198,9 @@ namespace SISE_2020
             return false;
         }
 
-        private int Hamming(PuzzleMatrix state)
+        public delegate int Heuristic(PuzzleMatrix state);
+
+        public static int Hamming(PuzzleMatrix state)
         {
             int value = 0;
             for (int i = 0; i < state.matrix.Length; i++)
@@ -200,7 +214,7 @@ namespace SISE_2020
             return value;
         }
 
-        private int Manhattan(PuzzleMatrix state)
+        public static int Manhattan(PuzzleMatrix state)
         {
             int value = 0;
             for (int i = 0; i < state.matrix.GetLength(0); i++)
@@ -220,11 +234,23 @@ namespace SISE_2020
         }
 
 
-        private bool wasThatStateBefore(PuzzleMatrix state)
+        private bool WasThatStateBefore(PuzzleMatrix state)
         {
             foreach(var s in allStates)
             {
                 if(s == state)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        private static bool WasThatStateBefore(PuzzleMatrix state, List<PuzzleMatrix> all)
+        {
+            foreach (var s in all)
+            {
+                if (s == state)
                 {
                     return true;
                 }
