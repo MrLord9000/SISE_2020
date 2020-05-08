@@ -36,6 +36,7 @@ namespace SISE_2020
 
             while (true)
             {
+                astarReturn.processedStates++;
                 for (int i = 0; i < openStates.Count; i++)
                 {
                     // Set current index based on lowest fscore
@@ -66,7 +67,6 @@ namespace SISE_2020
                 }
 
                 closedStates.Add(openStates[bestMatrix].Item1);
-                astarReturn.processedStates++;
                 openStates.RemoveAt(bestMatrix);
                 
             }
@@ -102,7 +102,7 @@ namespace SISE_2020
                 {
                     foreach(var state in currentStates)
                     {
-                        returnVariables.visitedStates++;
+                        returnVariables.processedStates++;
                         if (!WasThatStateBefore(state)) // if that state was not before
                         {
                             allStates.Add(state);
@@ -122,10 +122,10 @@ namespace SISE_2020
                                     if(theMatrix != null )
                                     {
                                         newStates.Add( theMatrix );
+                                        returnVariables.visitedStates++;
                                     }
                                 }
                             }
-                            returnVariables.processedStates++;
                         }
                     }
                 }
@@ -185,10 +185,10 @@ namespace SISE_2020
                 {
                     for (int i = 0; i < commandOrder.Length; ++i)
                     {
-                        returnVariables.visitedStates++;
                         var theMatrix = currentMatrix.MoveFreeSpace(commandOrder[i]);
                         if (theMatrix != null)
                         {
+                            returnVariables.visitedStates++;
                             theMatrix.recursionDepth = currentMatrix.recursionDepth + 1;
                             returnFlag |= DFSAlgorithm(theMatrix, commandOrder, maxDepth);
                             if (returnFlag)
