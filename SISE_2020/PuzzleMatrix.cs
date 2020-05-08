@@ -19,6 +19,14 @@ namespace SISE_2020
 
         private Tuple<int, int> zeroPosition;
 
+        public static PuzzleMatrix GetTargetPuzzle()
+        {
+            return new PuzzleMatrix(new[,] {{ 1, 2, 3, 4 },
+                                            { 5, 6, 7, 8 },
+                                            { 9, 10, 11, 12 },
+                                            { 13, 14, 15, 0 }});
+        }
+
         public PuzzleMatrix(int[,] values, Tuple<int, int> zeroPosition, string command = "")
         {
             matrix = new int[values.GetLength(0), values.GetLength(1)];

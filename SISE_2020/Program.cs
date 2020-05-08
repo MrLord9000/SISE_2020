@@ -42,8 +42,8 @@ namespace SISE_2020
                     break;
             }
             Console.WriteLine("Time: " + puzzleReturn.time.ToString("f3") + "ms");
-            Console.WriteLine("Created states: " + puzzleReturn.createdStates.ToString());
-            Console.WriteLine("Parsed states: " + puzzleReturn.parsedStates.ToString());
+            Console.WriteLine("Created states: " + puzzleReturn.visitedStates.ToString());
+            Console.WriteLine("Parsed states: " + puzzleReturn.processedStates.ToString());
             Console.WriteLine("Depth: " + puzzleReturn.depth.ToString());
             if (puzzleReturn.resolvedMatrix != null)
                 Console.WriteLine("Return command: " + puzzleReturn.resolvedMatrix.Command);
