@@ -1,0 +1,413 @@
+1 1 astr manh 1 4 2 0 3,049
+1 2 astr manh 1 4 2 0 2,642
+2 1 astr manh 2 6 3 0 4,220
+2 2 astr manh 2 7 3 0 5,035
+2 3 astr manh 2 7 3 0 2,549
+2 4 astr manh 2 6 3 0 2,448
+3 1 astr manh 3 7 4 0 2,437
+3 2 astr manh 3 9 4 0 2,999
+3 3 astr manh 3 10 4 0 4,072
+3 4 astr manh 3 10 4 0 2,588
+3 5 astr manh 3 10 5 0 2,569
+3 6 astr manh 3 10 4 0 2,297
+3 7 astr manh 3 10 4 0 2,274
+3 8 astr manh 3 10 5 0 2,832
+3 9 astr manh 3 9 4 0 6,156
+3 10 astr manh 3 7 4 0 4,285
+4 1 astr manh 4 9 5 0 4,537
+4 2 astr manh 4 11 5 0 4,379
+4 3 astr manh 4 12 5 0 5,039
+4 4 astr manh 4 17 8 0 3,438
+4 5 astr manh 4 12 5 0 5,244
+4 6 astr manh 4 13 5 0 5,530
+4 7 astr manh 4 14 6 0 4,003
+4 8 astr manh 4 13 5 0 3,831
+4 9 astr manh 4 12 5 0 2,698
+4 10 astr manh 4 14 6 0 2,710
+4 11 astr manh 4 12 6 0 2,794
+4 12 astr manh 4 12 6 0 4,792
+4 13 astr manh 4 12 5 0 4,727
+4 14 astr manh 4 13 5 0 2,769
+4 15 astr manh 4 16 7 0 4,409
+4 16 astr manh 4 13 5 0 2,925
+4 17 astr manh 4 12 5 0 2,944
+4 18 astr manh 4 15 7 0 2,905
+4 19 astr manh 4 12 6 0 4,329
+4 20 astr manh 4 10 5 0 2,969
+4 21 astr manh 4 12 5 0 3,873
+4 22 astr manh 4 11 5 0 4,216
+4 23 astr manh 4 16 7 0 3,892
+4 24 astr manh 4 9 5 0 5,435
+5 1 astr manh 5 11 6 0 3,413
+5 2 astr manh 5 19 9 0 5,173
+5 3 astr manh 5 13 6 0 6,667
+5 4 astr manh 5 14 7 0 6,644
+5 5 astr manh 5 14 6 0 6,106
+5 6 astr manh 5 14 6 0 5,838
+5 7 astr manh 5 20 8 0 4,364
+5 8 astr manh 5 22 10 0 3,545
+5 9 astr manh 5 19 9 0 4,058
+5 10 astr manh 5 22 11 0 4,555
+5 11 astr manh 5 14 6 0 2,713
+5 12 astr manh 5 17 8 0 2,755
+5 13 astr manh 5 15 6 0 2,856
+5 14 astr manh 5 15 6 0 3,006
+5 15 astr manh 5 23 9 0 4,375
+5 16 astr manh 5 15 7 0 2,644
+5 17 astr manh 5 17 8 0 2,677
+5 18 astr manh 5 15 6 0 2,525
+5 19 astr manh 5 15 6 0 3,052
+5 20 astr manh 5 21 8 0 3,688
+5 21 astr manh 5 14 6 0 2,449
+5 22 astr manh 5 17 8 0 2,499
+5 23 astr manh 5 15 7 0 2,671
+5 24 astr manh 5 18 8 0 3,409
+5 25 astr manh 5 14 6 0 4,035
+5 26 astr manh 5 13 7 0 2,713
+5 27 astr manh 5 12 6 0 2,496
+5 28 astr manh 5 14 6 0 2,562
+5 29 astr manh 5 19 9 0 3,471
+5 30 astr manh 5 15 6 0 3,269
+5 31 astr manh 5 15 6 0 2,616
+5 32 astr manh 5 23 9 0 2,638
+5 33 astr manh 5 17 8 0 2,756
+5 34 astr manh 5 17 8 0 4,817
+5 35 astr manh 5 15 6 0 2,801
+5 36 astr manh 5 15 6 0 4,353
+5 37 astr manh 5 21 8 0 2,699
+5 38 astr manh 5 14 6 0 3,863
+5 39 astr manh 5 15 7 0 2,354
+5 40 astr manh 5 16 8 0 2,448
+5 41 astr manh 5 20 9 0 2,739
+5 42 astr manh 5 13 7 0 2,762
+5 43 astr manh 5 14 6 0 4,146
+5 44 astr manh 5 12 6 0 2,703
+5 45 astr manh 5 14 6 0 2,539
+5 46 astr manh 5 14 6 0 2,418
+5 47 astr manh 5 23 9 0 2,748
+5 48 astr manh 5 13 6 0 2,639
+5 49 astr manh 5 16 8 0 2,599
+5 50 astr manh 5 21 9 0 2,632
+5 51 astr manh 5 22 11 0 2,621
+5 52 astr manh 5 17 8 0 2,574
+5 53 astr manh 5 11 6 0 2,417
+5 54 astr manh 5 17 8 0 3,415
+6 1 astr manh 6 12 7 0 3,995
+6 2 astr manh 6 20 9 0 4,586
+6 3 astr manh 6 25 11 0 2,881
+6 4 astr manh 6 23 12 0 5,008
+6 5 astr manh 6 36 18 0 6,153
+6 6 astr manh 6 14 7 0 2,684
+6 7 astr manh 6 24 10 0 2,790
+6 8 astr manh 6 22 11 0 3,546
+6 9 astr manh 6 15 7 0 2,599
+6 10 astr manh 6 20 9 0 2,602
+6 11 astr manh 6 15 7 0 2,473
+6 12 astr manh 6 23 10 0 2,560
+6 13 astr manh 6 23 10 0 3,537
+6 14 astr manh 6 26 11 0 3,021
+6 15 astr manh 6 26 12 0 2,712
+6 16 astr manh 6 18 7 0 2,547
+6 17 astr manh 6 25 12 0 2,701
+6 18 astr manh 6 31 16 0 2,690
+6 19 astr manh 6 17 8 0 3,825
+6 20 astr manh 6 27 13 0 2,863
+6 21 astr manh 6 33 16 0 2,938
+6 22 astr manh 6 24 12 0 2,750
+6 23 astr manh 6 15 7 0 2,519
+6 24 astr manh 6 26 10 0 2,561
+6 25 astr manh 6 23 11 0 2,637
+6 26 astr manh 6 16 7 0 4,411
+6 27 astr manh 6 21 9 0 4,978
+6 28 astr manh 6 16 7 0 2,650
+6 29 astr manh 6 21 9 0 2,588
+6 30 astr manh 6 26 11 0 2,692
+6 31 astr manh 6 34 14 0 3,576
+6 32 astr manh 6 32 15 0 3,375
+6 33 astr manh 6 15 7 0 2,543
+6 34 astr manh 6 22 10 0 2,621
+6 35 astr manh 6 17 8 0 2,476
+6 36 astr manh 6 16 7 0 2,355
+6 37 astr manh 6 24 10 0 4,887
+6 38 astr manh 6 16 7 0 2,554
+6 39 astr manh 6 24 10 0 3,208
+6 40 astr manh 6 24 10 0 4,213
+6 41 astr manh 6 28 13 0 2,718
+6 42 astr manh 6 34 14 0 2,900
+6 43 astr manh 6 15 7 0 2,438
+6 44 astr manh 6 23 9 0 3,578
+6 45 astr manh 6 22 10 0 2,950
+6 46 astr manh 6 15 7 0 2,739
+6 47 astr manh 6 23 11 0 2,647
+6 48 astr manh 6 25 12 0 4,204
+6 49 astr manh 6 17 7 0 3,633
+6 50 astr manh 6 16 7 0 5,307
+6 51 astr manh 6 24 11 0 3,187
+6 52 astr manh 6 14 7 0 2,824
+6 53 astr manh 6 16 8 0 2,646
+6 54 astr manh 6 25 12 0 2,688
+6 55 astr manh 6 15 7 0 4,207
+6 56 astr manh 6 26 10 0 2,487
+6 57 astr manh 6 21 10 0 2,613
+6 58 astr manh 6 16 7 0 2,445
+6 59 astr manh 6 21 9 0 2,752
+6 60 astr manh 6 16 7 0 2,514
+6 61 astr manh 6 21 9 0 2,435
+6 62 astr manh 6 26 11 0 4,481
+6 63 astr manh 6 34 14 0 3,185
+6 64 astr manh 6 30 14 0 4,607
+6 65 astr manh 6 15 7 0 2,515
+6 66 astr manh 6 23 11 0 4,168
+6 67 astr manh 6 25 12 0 2,657
+6 68 astr manh 6 16 7 0 2,544
+6 69 astr manh 6 24 10 0 2,737
+6 70 astr manh 6 16 7 0 2,837
+6 71 astr manh 6 24 10 0 4,124
+6 72 astr manh 6 24 10 0 2,551
+6 73 astr manh 6 27 12 0 2,499
+6 74 astr manh 6 35 15 0 2,615
+6 75 astr manh 6 15 7 0 2,345
+6 76 astr manh 6 23 9 0 2,425
+6 77 astr manh 6 21 10 0 2,313
+6 78 astr manh 6 15 7 0 2,417
+6 79 astr manh 6 22 10 0 3,867
+6 80 astr manh 6 25 11 0 2,655
+6 81 astr manh 6 14 7 0 2,524
+6 82 astr manh 6 16 7 0 4,006
+6 83 astr manh 6 17 7 0 2,553
+6 84 astr manh 6 24 11 0 2,799
+6 85 astr manh 6 16 8 0 2,808
+6 86 astr manh 6 15 7 0 2,445
+6 87 astr manh 6 26 11 0 2,570
+6 88 astr manh 6 15 7 0 2,556
+6 89 astr manh 6 22 10 0 3,664
+6 90 astr manh 6 26 11 0 2,880
+6 91 astr manh 6 29 13 0 2,621
+6 92 astr manh 6 32 14 0 2,696
+6 93 astr manh 6 14 7 0 2,461
+6 94 astr manh 6 22 9 0 2,396
+6 95 astr manh 6 25 12 0 2,605
+6 96 astr manh 6 24 11 0 2,740
+6 97 astr manh 6 18 7 0 4,208
+6 98 astr manh 6 31 16 0 2,578
+6 99 astr manh 6 29 14 0 2,553
+6 100 astr manh 6 24 12 0 2,512
+6 101 astr manh 6 17 8 0 2,619
+6 102 astr manh 6 27 13 0 3,847
+6 103 astr manh 6 12 7 0 2,520
+6 104 astr manh 6 23 10 0 2,542
+6 105 astr manh 6 23 10 0 3,029
+6 106 astr manh 6 36 18 0 2,693
+6 107 astr manh 6 22 11 0 2,649
+7 1 astr manh 7 22 11 0 4,155
+7 2 astr manh 7 24 11 0 3,720
+7 3 astr manh 7 29 14 0 2,987
+7 4 astr manh 7 37 17 0 2,643
+7 5 astr manh 7 17 8 0 2,460
+7 6 astr manh 7 29 13 0 2,828
+7 7 astr manh 7 53 25 0 3,226
+7 8 astr manh 7 18 10 0 2,790
+7 9 astr manh 7 45 22 0 3,286
+7 10 astr manh 7 53 25 0 3,123
+7 11 astr manh 7 36 18 0 2,829
+7 12 astr manh 7 44 22 0 2,967
+7 13 astr manh 7 21 10 0 2,971
+7 14 astr manh 7 28 12 0 6,181
+7 15 astr manh 7 38 17 0 3,199
+7 16 astr manh 7 46 21 0 3,218
+7 17 astr manh 7 28 13 0 2,628
+7 18 astr manh 7 30 15 0 2,751
+7 19 astr manh 7 25 11 0 3,139
+7 20 astr manh 7 30 15 0 3,063
+7 21 astr manh 7 39 17 0 4,521
+7 22 astr manh 7 22 10 0 3,905
+7 23 astr manh 7 27 11 0 2,532
+7 24 astr manh 7 29 13 0 2,621
+7 25 astr manh 7 19 8 0 4,033
+7 26 astr manh 7 32 15 0 2,979
+7 27 astr manh 7 35 15 0 2,915
+7 28 astr manh 7 43 20 0 4,712
+7 29 astr manh 7 38 18 0 2,784
+7 30 astr manh 7 31 15 0 2,509
+7 31 astr manh 7 36 17 0 4,375
+7 32 astr manh 7 20 8 0 2,729
+7 33 astr manh 7 20 8 0 2,782
+7 34 astr manh 7 34 14 0 2,782
+7 35 astr manh 7 19 8 0 2,657
+7 36 astr manh 7 37 19 0 6,982
+7 37 astr manh 7 37 20 0 3,843
+7 38 astr manh 7 31 15 0 4,764
+7 39 astr manh 7 19 10 0 3,000
+7 40 astr manh 7 34 16 0 3,445
+7 41 astr manh 7 33 16 0 2,655
+7 42 astr manh 7 29 13 0 2,552
+7 43 astr manh 7 36 18 0 2,734
+7 44 astr manh 7 25 12 0 2,666
+7 45 astr manh 7 22 10 0 2,765
+7 46 astr manh 7 30 12 0 3,317
+7 47 astr manh 7 42 18 0 2,698
+7 48 astr manh 7 52 23 0 2,997
+7 49 astr manh 7 32 15 0 2,681
+7 50 astr manh 7 39 18 0 3,396
+7 51 astr manh 7 26 11 0 2,756
+7 52 astr manh 7 27 12 0 2,774
+7 53 astr manh 7 45 19 0 4,730
+7 54 astr manh 7 23 10 0 2,638
+7 55 astr manh 7 33 14 0 5,342
+7 56 astr manh 7 27 12 0 4,368
+7 57 astr manh 7 20 8 0 2,583
+7 58 astr manh 7 38 18 0 3,025
+7 59 astr manh 7 33 14 0 3,106
+7 60 astr manh 7 46 20 0 4,035
+7 61 astr manh 7 48 22 0 5,220
+7 62 astr manh 7 37 18 0 3,095
+7 63 astr manh 7 42 20 0 2,974
+7 64 astr manh 7 17 8 0 2,468
+7 65 astr manh 7 32 15 0 4,005
+7 66 astr manh 7 30 13 0 3,430
+7 67 astr manh 7 27 13 0 2,613
+7 68 astr manh 7 30 14 0 2,651
+7 69 astr manh 7 26 11 0 4,656
+7 70 astr manh 7 31 14 0 2,880
+7 71 astr manh 7 38 16 0 3,608
+7 72 astr manh 7 23 10 0 2,973
+7 73 astr manh 7 39 17 0 2,772
+7 74 astr manh 7 32 14 0 3,104
+7 75 astr manh 7 20 8 0 3,173
+7 76 astr manh 7 37 18 0 3,086
+7 77 astr manh 7 32 15 0 2,770
+7 78 astr manh 7 38 17 0 2,777
+7 79 astr manh 7 31 13 0 2,747
+7 80 astr manh 7 51 23 0 3,085
+7 81 astr manh 7 43 19 0 2,964
+7 82 astr manh 7 25 11 0 2,869
+7 83 astr manh 7 27 11 0 3,851
+7 84 astr manh 7 49 22 0 3,368
+7 85 astr manh 7 39 17 0 2,869
+7 86 astr manh 7 30 14 0 2,868
+7 87 astr manh 7 43 21 0 4,012
+7 88 astr manh 7 17 8 0 3,117
+7 89 astr manh 7 30 14 0 2,919
+7 90 astr manh 7 33 15 0 4,656
+7 91 astr manh 7 23 10 0 3,145
+7 92 astr manh 7 37 17 0 2,722
+7 93 astr manh 7 28 13 0 2,654
+7 94 astr manh 7 19 8 0 2,350
+7 95 astr manh 7 19 8 0 3,387
+7 96 astr manh 7 30 12 0 4,433
+7 97 astr manh 7 18 8 0 2,825
+7 98 astr manh 7 23 12 0 4,589
+7 99 astr manh 7 34 15 0 2,809
+7 100 astr manh 7 32 15 0 2,788
+7 101 astr manh 7 28 14 0 2,837
+7 102 astr manh 7 16 8 0 2,583
+7 103 astr manh 7 22 10 0 4,384
+7 104 astr manh 7 17 9 0 2,806
+7 105 astr manh 7 19 9 0 2,590
+7 106 astr manh 7 34 15 0 4,486
+7 107 astr manh 7 34 15 0 2,724
+7 108 astr manh 7 22 10 0 2,520
+7 109 astr manh 7 30 12 0 2,789
+7 110 astr manh 7 44 19 0 2,929
+7 111 astr manh 7 56 25 0 4,278
+7 112 astr manh 7 30 14 0 4,520
+7 113 astr manh 7 43 21 0 3,164
+7 114 astr manh 7 26 11 0 2,715
+7 115 astr manh 7 29 13 0 2,715
+7 116 astr manh 7 47 20 0 3,707
+7 117 astr manh 7 23 10 0 2,640
+7 118 astr manh 7 33 14 0 2,669
+7 119 astr manh 7 28 13 0 2,628
+7 120 astr manh 7 20 8 0 2,548
+7 121 astr manh 7 38 19 0 2,787
+7 122 astr manh 7 31 13 0 2,669
+7 123 astr manh 7 43 19 0 3,024
+7 124 astr manh 7 48 22 0 3,209
+7 125 astr manh 7 35 17 0 2,835
+7 126 astr manh 7 40 18 0 3,192
+7 127 astr manh 7 17 8 0 4,149
+7 128 astr manh 7 30 14 0 2,756
+7 129 astr manh 7 23 10 0 3,257
+7 130 astr manh 7 33 15 0 2,894
+7 131 astr manh 7 37 17 0 2,864
+7 132 astr manh 7 33 16 0 2,774
+7 133 astr manh 7 26 11 0 4,870
+7 134 astr manh 7 32 14 0 3,033
+7 135 astr manh 7 38 16 0 3,095
+7 136 astr manh 7 23 10 0 2,955
+7 137 astr manh 7 43 18 0 3,037
+7 138 astr manh 7 34 16 0 3,040
+7 139 astr manh 7 20 8 0 2,540
+7 140 astr manh 7 40 19 0 2,813
+7 141 astr manh 7 31 14 0 4,243
+7 142 astr manh 7 44 21 0 3,118
+7 143 astr manh 7 33 14 0 2,800
+7 144 astr manh 7 47 21 0 3,635
+7 145 astr manh 7 45 20 0 2,902
+7 146 astr manh 7 25 11 0 2,718
+7 147 astr manh 7 27 11 0 3,260
+7 148 astr manh 7 47 21 0 3,048
+7 149 astr manh 7 42 18 0 3,231
+7 150 astr manh 7 32 15 0 2,690
+7 151 astr manh 7 39 18 0 3,151
+7 152 astr manh 7 17 8 0 2,560
+7 153 astr manh 7 32 15 0 2,705
+7 154 astr manh 7 30 13 0 2,775
+7 155 astr manh 7 34 16 0 2,955
+7 156 astr manh 7 27 13 0 5,115
+7 157 astr manh 7 29 13 0 3,147
+7 158 astr manh 7 16 8 0 2,913
+7 159 astr manh 7 24 11 0 2,744
+7 160 astr manh 7 18 8 0 2,817
+7 161 astr manh 7 23 12 0 3,128
+7 162 astr manh 7 19 8 0 3,709
+7 163 astr manh 7 19 8 0 2,623
+7 164 astr manh 7 28 12 0 2,599
+7 165 astr manh 7 34 15 0 3,003
+7 166 astr manh 7 28 14 0 2,564
+7 167 astr manh 7 30 14 0 4,570
+7 168 astr manh 7 19 9 0 2,811
+7 169 astr manh 7 17 9 0 2,641
+7 170 astr manh 7 25 11 0 2,778
+7 171 astr manh 7 34 15 0 2,704
+7 172 astr manh 7 35 14 0 4,890
+7 173 astr manh 7 22 10 0 4,183
+7 174 astr manh 7 44 19 0 2,958
+7 175 astr manh 7 31 16 0 2,983
+7 176 astr manh 7 19 8 0 2,680
+7 177 astr manh 7 35 16 0 2,827
+7 178 astr manh 7 34 16 0 2,694
+7 179 astr manh 7 39 18 0 7,732
+7 180 astr manh 7 35 15 0 3,552
+7 181 astr manh 7 42 19 0 3,453
+7 182 astr manh 7 28 13 0 3,081
+7 183 astr manh 7 24 11 0 2,729
+7 184 astr manh 7 26 11 0 2,691
+7 185 astr manh 7 38 16 0 2,647
+7 186 astr manh 7 47 21 0 3,054
+7 187 astr manh 7 28 13 0 2,921
+7 188 astr manh 7 30 15 0 2,866
+7 189 astr manh 7 19 8 0 2,785
+7 190 astr manh 7 37 19 0 2,913
+7 191 astr manh 7 20 8 0 4,054
+7 192 astr manh 7 20 8 0 3,029
+7 193 astr manh 7 34 14 0 2,831
+7 194 astr manh 7 36 19 0 3,050
+7 195 astr manh 7 31 15 0 4,394
+7 196 astr manh 7 31 15 0 2,668
+7 197 astr manh 7 28 12 0 3,061
+7 198 astr manh 7 25 12 0 2,706
+7 199 astr manh 7 19 10 0 4,198
+7 200 astr manh 7 33 16 0 3,191
+7 201 astr manh 7 25 12 0 2,558
+7 202 astr manh 7 27 12 0 3,398
+7 203 astr manh 7 40 18 0 3,232
+7 204 astr manh 7 39 18 0 4,839
+7 205 astr manh 7 27 12 0 2,676
+7 206 astr manh 7 17 8 0 2,393
+7 207 astr manh 7 52 24 0 2,711
+7 208 astr manh 7 50 24 0 4,707
+7 209 astr manh 7 39 20 0 4,766
+7 210 astr manh 7 36 18 0 4,409
+7 211 astr manh 7 18 10 0 2,629
+7 212 astr manh 7 45 22 0 3,449

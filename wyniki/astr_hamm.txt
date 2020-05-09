@@ -1,0 +1,413 @@
+1 1 astr hamm 1 4 2 0 2,041
+1 2 astr hamm 1 4 2 0 2,003
+2 1 astr hamm 2 6 3 0 2,112
+2 2 astr hamm 2 7 3 0 2,118
+2 3 astr hamm 2 7 3 0 2,093
+2 4 astr hamm 2 6 3 0 2,025
+3 1 astr hamm 3 7 4 0 2,089
+3 2 astr hamm 3 9 4 0 2,061
+3 3 astr hamm 3 10 4 0 2,170
+3 4 astr hamm 3 10 4 0 2,173
+3 5 astr hamm 3 10 5 0 2,081
+3 6 astr hamm 3 10 4 0 2,104
+3 7 astr hamm 3 10 4 0 2,165
+3 8 astr hamm 3 10 5 0 2,405
+3 9 astr hamm 3 9 4 0 2,199
+3 10 astr hamm 3 7 4 0 2,200
+4 1 astr hamm 4 9 5 0 2,104
+4 2 astr hamm 4 11 5 0 2,128
+4 3 astr hamm 4 12 5 0 2,126
+4 4 astr hamm 4 12 5 0 2,105
+4 5 astr hamm 4 12 5 0 2,124
+4 6 astr hamm 4 13 5 0 2,081
+4 7 astr hamm 4 12 5 0 2,086
+4 8 astr hamm 4 13 5 0 4,199
+4 9 astr hamm 4 12 5 0 2,602
+4 10 astr hamm 4 12 5 0 3,490
+4 11 astr hamm 4 12 6 0 2,127
+4 12 astr hamm 4 12 6 0 2,232
+4 13 astr hamm 4 12 5 0 2,273
+4 14 astr hamm 4 13 5 0 5,777
+4 15 astr hamm 4 12 5 0 2,325
+4 16 astr hamm 4 13 5 0 2,335
+4 17 astr hamm 4 12 5 0 2,140
+4 18 astr hamm 4 12 5 0 2,173
+4 19 astr hamm 4 12 6 0 2,146
+4 20 astr hamm 4 12 6 0 2,147
+4 21 astr hamm 4 12 5 0 2,189
+4 22 astr hamm 4 11 5 0 2,267
+4 23 astr hamm 4 12 5 0 2,224
+4 24 astr hamm 4 9 5 0 2,108
+5 1 astr hamm 5 11 6 0 4,598
+5 2 astr hamm 5 15 7 0 3,199
+5 3 astr hamm 5 13 6 0 2,504
+5 4 astr hamm 5 13 7 0 2,122
+5 5 astr hamm 5 14 6 0 3,436
+5 6 astr hamm 5 14 6 0 2,069
+5 7 astr hamm 5 15 6 0 2,417
+5 8 astr hamm 5 15 6 0 3,393
+5 9 astr hamm 5 17 8 0 2,109
+5 10 astr hamm 5 15 7 0 2,205
+5 11 astr hamm 5 14 6 0 2,848
+5 12 astr hamm 5 13 6 0 3,993
+5 13 astr hamm 5 15 6 0 2,216
+5 14 astr hamm 5 15 6 0 2,251
+5 15 astr hamm 5 19 7 0 2,151
+5 16 astr hamm 5 13 6 0 2,137
+5 17 astr hamm 5 18 8 0 2,152
+5 18 astr hamm 5 15 6 0 2,266
+5 19 astr hamm 5 15 6 0 2,755
+5 20 astr hamm 5 16 6 0 2,198
+5 21 astr hamm 5 14 6 0 2,148
+5 22 astr hamm 5 13 6 0 2,162
+5 23 astr hamm 5 13 6 0 2,368
+5 24 astr hamm 5 15 7 0 2,287
+5 25 astr hamm 5 18 8 0 2,257
+5 26 astr hamm 5 13 7 0 2,305
+5 27 astr hamm 5 19 9 0 2,193
+5 28 astr hamm 5 14 6 0 3,427
+5 29 astr hamm 5 13 6 0 3,956
+5 30 astr hamm 5 15 6 0 2,194
+5 31 astr hamm 5 15 6 0 2,382
+5 32 astr hamm 5 19 7 0 2,160
+5 33 astr hamm 5 13 6 0 2,224
+5 34 astr hamm 5 17 8 0 2,231
+5 35 astr hamm 5 15 6 0 2,689
+5 36 astr hamm 5 15 6 0 2,187
+5 37 astr hamm 5 19 7 0 3,364
+5 38 astr hamm 5 14 6 0 2,152
+5 39 astr hamm 5 13 6 0 2,154
+5 40 astr hamm 5 13 6 0 2,144
+5 41 astr hamm 5 18 8 0 2,541
+5 42 astr hamm 5 13 7 0 2,142
+5 43 astr hamm 5 18 8 0 2,164
+5 44 astr hamm 5 19 9 0 2,172
+5 45 astr hamm 5 14 6 0 2,423
+5 46 astr hamm 5 14 6 0 2,424
+5 47 astr hamm 5 15 6 0 2,270
+5 48 astr hamm 5 13 6 0 2,309
+5 49 astr hamm 5 13 7 0 2,137
+5 50 astr hamm 5 15 6 0 2,167
+5 51 astr hamm 5 15 7 0 2,166
+5 52 astr hamm 5 17 8 0 2,149
+5 53 astr hamm 5 11 6 0 2,075
+5 54 astr hamm 5 12 6 0 3,330
+6 1 astr hamm 6 12 7 0 2,129
+6 2 astr hamm 6 14 7 0 2,168
+6 3 astr hamm 6 15 7 0 2,147
+6 4 astr hamm 6 18 10 0 2,403
+6 5 astr hamm 6 15 7 0 2,146
+6 6 astr hamm 6 14 7 0 2,383
+6 7 astr hamm 6 19 8 0 2,236
+6 8 astr hamm 6 20 10 0 2,169
+6 9 astr hamm 6 15 7 0 2,093
+6 10 astr hamm 6 18 8 0 2,790
+6 11 astr hamm 6 15 7 0 2,145
+6 12 astr hamm 6 16 7 0 2,254
+6 13 astr hamm 6 17 7 0 2,585
+6 14 astr hamm 6 21 8 0 2,628
+6 15 astr hamm 6 17 7 0 3,482
+6 16 astr hamm 6 21 8 0 2,372
+6 17 astr hamm 6 17 7 0 2,840
+6 18 astr hamm 6 17 7 0 5,787
+6 19 astr hamm 6 24 11 0 2,199
+6 20 astr hamm 6 27 12 0 2,529
+6 21 astr hamm 6 17 8 0 3,432
+6 22 astr hamm 6 17 8 0 2,225
+6 23 astr hamm 6 15 7 0 2,138
+6 24 astr hamm 6 20 8 0 2,169
+6 25 astr hamm 6 17 8 0 2,160
+6 26 astr hamm 6 16 7 0 2,397
+6 27 astr hamm 6 19 8 0 2,484
+6 28 astr hamm 6 16 7 0 2,174
+6 29 astr hamm 6 17 7 0 2,900
+6 30 astr hamm 6 18 7 0 3,773
+6 31 astr hamm 6 25 10 0 2,267
+6 32 astr hamm 6 18 7 0 2,327
+6 33 astr hamm 6 17 8 0 2,155
+6 34 astr hamm 6 29 13 0 2,258
+6 35 astr hamm 6 23 10 0 2,204
+6 36 astr hamm 6 16 7 0 2,167
+6 37 astr hamm 6 17 7 0 2,133
+6 38 astr hamm 6 16 7 0 2,146
+6 39 astr hamm 6 19 8 0 2,264
+6 40 astr hamm 6 18 7 0 3,155
+6 41 astr hamm 6 18 7 0 3,900
+6 42 astr hamm 6 25 10 0 2,573
+6 43 astr hamm 6 15 7 0 2,137
+6 44 astr hamm 6 20 8 0 2,160
+6 45 astr hamm 6 17 8 0 2,093
+6 46 astr hamm 6 17 8 0 2,167
+6 47 astr hamm 6 37 16 0 5,746
+6 48 astr hamm 6 17 8 0 2,538
+6 49 astr hamm 6 18 8 0 2,156
+6 50 astr hamm 6 17 8 0 2,172
+6 51 astr hamm 6 28 13 0 2,214
+6 52 astr hamm 6 15 8 0 2,152
+6 53 astr hamm 6 23 11 0 2,214
+6 54 astr hamm 6 28 13 0 2,538
+6 55 astr hamm 6 15 7 0 2,099
+6 56 astr hamm 6 20 8 0 2,166
+6 57 astr hamm 6 17 8 0 6,170
+6 58 astr hamm 6 16 7 0 2,278
+6 59 astr hamm 6 19 8 0 2,215
+6 60 astr hamm 6 16 7 0 2,166
+6 61 astr hamm 6 17 7 0 2,086
+6 62 astr hamm 6 18 7 0 2,178
+6 63 astr hamm 6 25 10 0 3,073
+6 64 astr hamm 6 18 7 0 2,196
+6 65 astr hamm 6 17 8 0 2,152
+6 66 astr hamm 6 37 16 0 2,446
+6 67 astr hamm 6 17 8 0 2,228
+6 68 astr hamm 6 16 7 0 2,144
+6 69 astr hamm 6 17 7 0 3,427
+6 70 astr hamm 6 16 7 0 2,156
+6 71 astr hamm 6 19 8 0 2,553
+6 72 astr hamm 6 18 7 0 2,567
+6 73 astr hamm 6 18 7 0 2,970
+6 74 astr hamm 6 25 10 0 2,323
+6 75 astr hamm 6 15 7 0 2,588
+6 76 astr hamm 6 20 8 0 2,169
+6 77 astr hamm 6 17 8 0 2,172
+6 78 astr hamm 6 17 8 0 3,955
+6 79 astr hamm 6 29 13 0 2,462
+6 80 astr hamm 6 23 10 0 3,556
+6 81 astr hamm 6 15 8 0 3,332
+6 82 astr hamm 6 17 8 0 2,156
+6 83 astr hamm 6 18 8 0 2,411
+6 84 astr hamm 6 28 13 0 4,929
+6 85 astr hamm 6 23 11 0 2,821
+6 86 astr hamm 6 15 7 0 2,530
+6 87 astr hamm 6 16 7 0 2,958
+6 88 astr hamm 6 15 7 0 3,664
+6 89 astr hamm 6 18 8 0 4,033
+6 90 astr hamm 6 17 7 0 2,285
+6 91 astr hamm 6 17 7 0 2,376
+6 92 astr hamm 6 21 8 0 2,206
+6 93 astr hamm 6 14 7 0 3,255
+6 94 astr hamm 6 19 8 0 2,541
+6 95 astr hamm 6 20 10 0 2,510
+6 96 astr hamm 6 17 7 0 2,475
+6 97 astr hamm 6 21 8 0 2,506
+6 98 astr hamm 6 17 7 0 2,380
+6 99 astr hamm 6 17 8 0 6,591
+6 100 astr hamm 6 17 8 0 3,904
+6 101 astr hamm 6 24 11 0 2,467
+6 102 astr hamm 6 25 11 0 2,453
+6 103 astr hamm 6 12 7 0 2,378
+6 104 astr hamm 6 14 7 0 2,371
+6 105 astr hamm 6 15 7 0 2,452
+6 106 astr hamm 6 15 7 0 2,455
+6 107 astr hamm 6 18 10 0 3,644
+7 1 astr hamm 7 14 8 0 2,825
+7 2 astr hamm 7 16 8 0 2,658
+7 3 astr hamm 7 23 10 0 2,509
+7 4 astr hamm 7 17 8 0 2,303
+7 5 astr hamm 7 19 9 0 2,571
+7 6 astr hamm 7 17 8 0 2,290
+7 7 astr hamm 7 18 8 0 2,220
+7 8 astr hamm 7 23 12 0 2,375
+7 9 astr hamm 7 29 15 0 2,580
+7 10 astr hamm 7 18 8 0 2,593
+7 11 astr hamm 7 20 10 0 2,627
+7 12 astr hamm 7 18 9 0 2,492
+7 13 astr hamm 7 16 8 0 2,390
+7 14 astr hamm 7 18 8 0 2,422
+7 15 astr hamm 7 26 12 0 2,454
+7 16 astr hamm 7 19 8 0 2,578
+7 17 astr hamm 7 29 14 0 2,561
+7 18 astr hamm 7 28 13 0 2,628
+7 19 astr hamm 7 19 9 0 4,108
+7 20 astr hamm 7 18 9 0 2,529
+7 21 astr hamm 7 27 12 0 2,668
+7 22 astr hamm 7 19 9 0 2,600
+7 23 astr hamm 7 22 9 0 2,634
+7 24 astr hamm 7 17 8 0 2,466
+7 25 astr hamm 7 21 9 0 2,647
+7 26 astr hamm 7 18 8 0 2,391
+7 27 astr hamm 7 38 15 0 2,453
+7 28 astr hamm 7 23 10 0 2,297
+7 29 astr hamm 7 21 9 0 3,067
+7 30 astr hamm 7 18 8 0 2,373
+7 31 astr hamm 7 20 9 0 2,428
+7 32 astr hamm 7 20 8 0 3,859
+7 33 astr hamm 7 20 8 0 2,304
+7 34 astr hamm 7 35 14 0 2,517
+7 35 astr hamm 7 19 8 0 2,715
+7 36 astr hamm 7 18 8 0 2,456
+7 37 astr hamm 7 18 8 0 2,742
+7 38 astr hamm 7 22 10 0 2,809
+7 39 astr hamm 7 27 13 0 2,452
+7 40 astr hamm 7 37 17 0 2,629
+7 41 astr hamm 7 50 24 0 3,682
+7 42 astr hamm 7 23 10 0 2,530
+7 43 astr hamm 7 18 9 0 2,933
+7 44 astr hamm 7 48 23 0 2,712
+7 45 astr hamm 7 17 8 0 2,478
+7 46 astr hamm 7 19 8 0 6,535
+7 47 astr hamm 7 28 12 0 2,752
+7 48 astr hamm 7 23 9 0 3,647
+7 49 astr hamm 7 32 15 0 3,429
+7 50 astr hamm 7 21 10 0 2,775
+7 51 astr hamm 7 20 9 0 4,255
+7 52 astr hamm 7 18 8 0 2,314
+7 53 astr hamm 7 29 12 0 2,384
+7 54 astr hamm 7 20 9 0 2,327
+7 55 astr hamm 7 26 10 0 3,092
+7 56 astr hamm 7 18 8 0 3,962
+7 57 astr hamm 7 22 9 0 2,426
+7 58 astr hamm 7 19 8 0 2,478
+7 59 astr hamm 7 35 14 0 2,601
+7 60 astr hamm 7 32 13 0 2,773
+7 61 astr hamm 7 32 14 0 3,014
+7 62 astr hamm 7 19 8 0 4,848
+7 63 astr hamm 7 21 9 0 2,551
+7 64 astr hamm 7 17 8 0 2,493
+7 65 astr hamm 7 31 14 0 2,767
+7 66 astr hamm 7 39 17 0 2,555
+7 67 astr hamm 7 38 17 0 2,674
+7 68 astr hamm 7 39 18 0 2,653
+7 69 astr hamm 7 20 9 0 2,495
+7 70 astr hamm 7 18 8 0 2,467
+7 71 astr hamm 7 23 9 0 4,257
+7 72 astr hamm 7 20 9 0 2,721
+7 73 astr hamm 7 29 12 0 2,721
+7 74 astr hamm 7 18 8 0 2,233
+7 75 astr hamm 7 22 9 0 2,322
+7 76 astr hamm 7 19 8 0 3,383
+7 77 astr hamm 7 19 8 0 3,721
+7 78 astr hamm 7 24 10 0 2,525
+7 79 astr hamm 7 35 14 0 3,597
+7 80 astr hamm 7 35 14 0 2,603
+7 81 astr hamm 7 32 14 0 2,879
+7 82 astr hamm 7 17 8 0 2,613
+7 83 astr hamm 7 19 8 0 2,383
+7 84 astr hamm 7 20 8 0 3,757
+7 85 astr hamm 7 28 12 0 2,804
+7 86 astr hamm 7 26 12 0 2,620
+7 87 astr hamm 7 18 9 0 2,502
+7 88 astr hamm 7 17 8 0 2,460
+7 89 astr hamm 7 26 12 0 2,449
+7 90 astr hamm 7 37 16 0 4,606
+7 91 astr hamm 7 42 18 0 2,703
+7 92 astr hamm 7 51 24 0 2,748
+7 93 astr hamm 7 35 16 0 2,697
+7 94 astr hamm 7 20 9 0 2,636
+7 95 astr hamm 7 20 9 0 5,273
+7 96 astr hamm 7 21 9 0 2,749
+7 97 astr hamm 7 19 9 0 4,232
+7 98 astr hamm 7 19 10 0 2,408
+7 99 astr hamm 7 31 14 0 2,606
+7 100 astr hamm 7 38 18 0 2,664
+7 101 astr hamm 7 37 17 0 2,489
+7 102 astr hamm 7 17 9 0 2,384
+7 103 astr hamm 7 24 11 0 2,435
+7 104 astr hamm 7 25 12 0 3,150
+7 105 astr hamm 7 39 18 0 2,668
+7 106 astr hamm 7 35 16 0 2,759
+7 107 astr hamm 7 38 17 0 2,651
+7 108 astr hamm 7 17 8 0 2,373
+7 109 astr hamm 7 19 8 0 2,409
+7 110 astr hamm 7 28 12 0 2,521
+7 111 astr hamm 7 23 9 0 2,480
+7 112 astr hamm 7 26 12 0 2,512
+7 113 astr hamm 7 20 10 0 2,488
+7 114 astr hamm 7 20 9 0 2,700
+7 115 astr hamm 7 18 8 0 2,325
+7 116 astr hamm 7 29 12 0 2,763
+7 117 astr hamm 7 20 9 0 2,495
+7 118 astr hamm 7 26 10 0 2,506
+7 119 astr hamm 7 18 8 0 2,449
+7 120 astr hamm 7 22 9 0 2,325
+7 121 astr hamm 7 19 8 0 2,501
+7 122 astr hamm 7 35 14 0 2,358
+7 123 astr hamm 7 32 14 0 2,366
+7 124 astr hamm 7 35 14 0 2,397
+7 125 astr hamm 7 19 8 0 2,321
+7 126 astr hamm 7 24 10 0 2,332
+7 127 astr hamm 7 17 8 0 2,396
+7 128 astr hamm 7 26 12 0 2,456
+7 129 astr hamm 7 40 18 0 5,478
+7 130 astr hamm 7 37 16 0 2,624
+7 131 astr hamm 7 51 24 0 2,794
+7 132 astr hamm 7 35 16 0 2,625
+7 133 astr hamm 7 20 9 0 2,412
+7 134 astr hamm 7 18 8 0 4,397
+7 135 astr hamm 7 26 10 0 3,629
+7 136 astr hamm 7 20 9 0 2,528
+7 137 astr hamm 7 29 12 0 2,540
+7 138 astr hamm 7 18 8 0 2,470
+7 139 astr hamm 7 22 9 0 2,408
+7 140 astr hamm 7 19 8 0 2,393
+7 141 astr hamm 7 19 8 0 2,477
+7 142 astr hamm 7 23 10 0 2,622
+7 143 astr hamm 7 35 14 0 3,847
+7 144 astr hamm 7 32 14 0 4,622
+7 145 astr hamm 7 32 13 0 3,241
+7 146 astr hamm 7 17 8 0 2,534
+7 147 astr hamm 7 19 8 0 4,864
+7 148 astr hamm 7 23 9 0 2,549
+7 149 astr hamm 7 28 12 0 2,675
+7 150 astr hamm 7 32 15 0 2,560
+7 151 astr hamm 7 21 10 0 2,258
+7 152 astr hamm 7 17 8 0 2,599
+7 153 astr hamm 7 31 14 0 3,286
+7 154 astr hamm 7 39 17 0 3,080
+7 155 astr hamm 7 31 14 0 2,728
+7 156 astr hamm 7 40 18 0 2,719
+7 157 astr hamm 7 40 18 0 2,805
+7 158 astr hamm 7 17 9 0 2,380
+7 159 astr hamm 7 24 11 0 2,906
+7 160 astr hamm 7 19 9 0 2,625
+7 161 astr hamm 7 19 10 0 2,576
+7 162 astr hamm 7 20 9 0 2,582
+7 163 astr hamm 7 20 9 0 2,561
+7 164 astr hamm 7 24 10 0 3,973
+7 165 astr hamm 7 31 14 0 2,547
+7 166 astr hamm 7 37 17 0 2,648
+7 167 astr hamm 7 40 19 0 3,030
+7 168 astr hamm 7 39 18 0 2,876
+7 169 astr hamm 7 25 12 0 3,016
+7 170 astr hamm 7 19 9 0 2,610
+7 171 astr hamm 7 17 8 0 2,382
+7 172 astr hamm 7 22 9 0 2,594
+7 173 astr hamm 7 19 9 0 2,559
+7 174 astr hamm 7 27 12 0 2,536
+7 175 astr hamm 7 18 9 0 2,559
+7 176 astr hamm 7 21 9 0 2,520
+7 177 astr hamm 7 18 8 0 3,049
+7 178 astr hamm 7 18 8 0 2,489
+7 179 astr hamm 7 20 9 0 2,492
+7 180 astr hamm 7 41 16 0 2,645
+7 181 astr hamm 7 21 9 0 3,900
+7 182 astr hamm 7 23 10 0 3,946
+7 183 astr hamm 7 16 8 0 2,419
+7 184 astr hamm 7 18 8 0 3,627
+7 185 astr hamm 7 19 8 0 2,606
+7 186 astr hamm 7 26 12 0 3,868
+7 187 astr hamm 7 29 14 0 2,577
+7 188 astr hamm 7 28 13 0 2,557
+7 189 astr hamm 7 19 8 0 2,511
+7 190 astr hamm 7 18 8 0 2,494
+7 191 astr hamm 7 20 8 0 4,162
+7 192 astr hamm 7 20 8 0 7,103
+7 193 astr hamm 7 35 14 0 2,790
+7 194 astr hamm 7 18 8 0 2,644
+7 195 astr hamm 7 22 10 0 4,094
+7 196 astr hamm 7 18 9 0 3,251
+7 197 astr hamm 7 23 10 0 2,637
+7 198 astr hamm 7 52 25 0 3,181
+7 199 astr hamm 7 27 13 0 4,321
+7 200 astr hamm 7 50 24 0 2,835
+7 201 astr hamm 7 14 8 0 2,413
+7 202 astr hamm 7 16 8 0 2,519
+7 203 astr hamm 7 17 8 0 3,912
+7 204 astr hamm 7 20 9 0 2,589
+7 205 astr hamm 7 17 8 0 2,492
+7 206 astr hamm 7 19 9 0 2,317
+7 207 astr hamm 7 18 8 0 2,382
+7 208 astr hamm 7 18 8 0 2,492
+7 209 astr hamm 7 18 9 0 3,979
+7 210 astr hamm 7 20 10 0 2,600
+7 211 astr hamm 7 23 12 0 2,527
+7 212 astr hamm 7 29 15 0 2,598
