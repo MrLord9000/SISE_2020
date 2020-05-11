@@ -21,6 +21,7 @@ namespace SISE_2020
             astarReturn.visitedStates = 1;
             astarReturn.processedStates = 0;
             astarReturn.depth = 0;
+            astarReturn.maxDepth = 0;
 
             List<(PuzzleMatrix, int)> openStates = new List<(PuzzleMatrix, int)>();
             List<PuzzleMatrix> closedStates = new List<PuzzleMatrix>();
@@ -65,7 +66,7 @@ namespace SISE_2020
                         astarReturn.visitedStates++;
                     }
                 }
-
+                astarReturn.maxDepth = Math.Max(astarReturn.maxDepth, openStates[bestMatrix].Item1.Command.Length);
                 closedStates.Add(openStates[bestMatrix].Item1);
                 openStates.RemoveAt(bestMatrix);
                 
